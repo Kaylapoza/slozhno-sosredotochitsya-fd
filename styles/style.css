@@ -10,6 +10,7 @@
 }
 
 .header {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   block-size: 100vh;
@@ -17,9 +18,53 @@
   padding: 10px;
 }
 
+.header__decor-element {
+  color: var(--accent-color);
+  text-align: end;
+  margin-inline-end: 1.75rem;
+  line-height: 130%;
+}
+
+.header__decor-element::after {
+  content: '';
+  position: absolute;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  top: 18px;
+  right: 19px;
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  border: solid 1px var(--accent-color);
+  border-bottom: none;
+  border-left: none;
+  top: 10px;
+  right: 10px;
+}
+
+.decorated-zone::after {
+  content: '';
+  display: block;
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  border: solid 1px var(--accent-color);
+  border-top: none;
+  border-right: none;
+  bottom: 10px;
+  left: 10px;
+}
+
 .header__theme-menu {
   justify-self: end;
-  align-self: center;
 }
 
 .header__theme-menu-list {
@@ -29,10 +74,11 @@
 }
 
 .header__theme-menu-button {
-  padding: 0 13px;
+  display: flex;
+  align-items: center;
+  padding: 1.5px 13px;
   background-color: transparent;
   border: none;
-  font-size: 1.125rem;
   color: var(--accent-color);
   line-height: 100%;
 }
@@ -49,6 +95,20 @@
   font-weight: 700;
   line-height: 83%;
   text-shadow: 4px 4px 0 var(--accent-color); 
+}
+
+.header__text {
+  display: block;
+  block-size: fit-content;
+  inline-size: 100%;
+  font-weight: 700;
+  color: var(--background-color);
+  line-height: 130%;
+  word-spacing: 0.7em;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
 }
 /*достилизовать параграф заголовка и псевдоэлементы*/
 
