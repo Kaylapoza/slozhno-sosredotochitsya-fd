@@ -97,18 +97,28 @@
   text-shadow: 4px 4px 0 var(--accent-color); 
 }
 
-.header__text {
+.title-decor {
   display: block;
   block-size: fit-content;
   inline-size: 100%;
-  font-weight: 700;
+  background-color: var(--accent-color);
   color: var(--background-color);
+  font-weight: 700;
   line-height: 130%;
   word-spacing: 0.7em;
 }
 
-.title-decor {
-  background-color: var(--accent-color);
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  margin: 40px 0;
 }
-/*достилизовать параграф заголовка и псевдоэлементы*/
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 10px;
+}
+
 
