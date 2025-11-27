@@ -179,8 +179,21 @@
   line-height: 100%;
 }
 
-.header__theme-menu-button_type_dark {
+.header__theme-menu-button:hover {
+  border: solid 1px #FF007066;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: solid 1px var(--accent-color);
+}
+
+/* .header__theme-menu-button_type_dark {
   border: 1px solid var(--accent-color);
+} */
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: solid 1px var(--accent-color);
 }
 
 .title {
@@ -365,5 +378,5 @@
   }
 }
 
-/* Доделать разметку картинок. Скорее всего придется переделать свойства у секшен имадж полностью через хз */
+/* доделать преферс колор схемм */
 
