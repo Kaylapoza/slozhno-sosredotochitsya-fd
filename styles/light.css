@@ -3,6 +3,59 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-image: url(../images/cover-image-light.png);
+    --text-color: #353430;
+    --background-color: rgba(255, 241, 247, 1);
+    --accent-color: #FF8DCB;
+
+    .header__decor-element {
+      visibility: hidden;
+    }
+
+    .header__theme-menu-button {
+      color: var(--text-color);
+    }
+
+    .header__theme-menu-button:hover {
+      border: solid 1px #32312D66;
+    }
+
+    .header__theme-menu-button:focus-visible {
+      border-bottom: solid 1px var(--text-color);
+    }
+
+    .header__theme-menu-button_active {
+      pointer-events: none;
+      border: solid 1px var(--text-color);
+    }
+
+    .header__theme-menu-button_type_dark {
+      border: none;
+    }
+
+    .title-decor {
+      color: var(--text-color);
+    }
+
+    .section__title {
+      color: var(--text-color);
+    }
+
+    .decorated-zone::before {
+      border: solid 1px var(--text-color);
+      border-bottom: none;
+      border-left: none;
+    }
+
+    .decorated-zone::after {
+      border: solid 1px var(--text-color);
+      border-top: none;
+      border-right: none;
+    }
+  }
+}
 
 :root.theme-light {
   --background-image: url(../images/cover-image-light.png);
@@ -11,7 +64,7 @@
   --accent-color: #FF8DCB;
 
   .header__decor-element {
-    display: none;
+    visibility: hidden;
   }
 
   .header__theme-menu-button {
@@ -19,15 +72,16 @@
   }
 
   .header__theme-menu-button:hover {
-  border: solid 1px #32312D66;
+    border: solid 1px #32312D66;
   }
 
   .header__theme-menu-button:focus-visible {
-  border-bottom: solid 1px var(--text-color);
+    border-bottom: solid 1px var(--text-color);
   }
 
-  .header__theme-menu-button_type_light {
-    border: 1px solid var(--text-color);
+  .header__theme-menu-button_active {
+    pointer-events: none;
+    border: solid 1px var(--text-color);
   }
 
   .header__theme-menu-button_type_dark {
@@ -58,3 +112,4 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
