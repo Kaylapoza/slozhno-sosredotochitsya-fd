@@ -52,6 +52,12 @@
     border-right: none;
   }
 
+  @media (width >= 768px) {
+    .header .title-decor {
+      inline-size: 50%;
+    }
+  }
+
   .title-decor {
     display: block;
     block-size: fit-content;
@@ -62,6 +68,10 @@
     font-weight: 700;
     line-height: 129%;
     text-wrap-style: pretty;
+  }
+
+  .title-decor__no-bold {
+    font-weight: 400;
   }
 
   .section__title {
