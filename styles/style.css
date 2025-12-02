@@ -30,7 +30,6 @@
 }
 
 .round {
-  /* content: ''; */
   position: absolute;
   inline-size: 9px;
   block-size: 9px;
@@ -110,7 +109,7 @@
   color: #DB00FF;
   font-weight: 700;
   line-height: 83%;
-  text-shadow: 4px 4px 0 var(--accent-color); 
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .header .title-decor {
@@ -269,7 +268,7 @@
   outline: solid 1px var(--text-color);
 }
 
-.section__image  {
+.section__image {
   inline-size: 100%;
 }
 
@@ -391,6 +390,4 @@
     min-block-size: 768px;
   }
 }
-
-/* доделать преферс колор схемм */
 
