@@ -256,6 +256,7 @@
 
 .triggers .cards {
   display: grid;
+  gap: 20px;
 }
 
 .section__image {
@@ -287,7 +288,6 @@
 
   .triggers .cards {
     grid-column: 1/-1;
-    gap: 20px;
   }
 
   .methods .card {
