@@ -277,7 +277,7 @@
     grid-column: 1/2;
   }
 
-  .card {
+  .reasons .card {
     grid-column: 2/4;
   }
 
@@ -290,8 +290,8 @@
     gap: 20px;
   }
 
-  .triggers .cards .card {
-    grid-column: 1/-1;
+  .methods .card {
+    grid-column: 2/4;
   }
 
   .methods .section__title {
@@ -346,7 +346,6 @@
   }
 
   .triggers .cards {
-    grid-column: 1/-1;
     grid-row: 2/3;
     grid-template-columns: repeat(3, 1fr);
   }
