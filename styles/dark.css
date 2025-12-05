@@ -9,9 +9,12 @@
   --background-color: #000028;
   --accent-color: #ff0070;
   --text-color: #F1B2CE;
-  
+
+  .round {
+    visibility: inherit;
+  }
+
   .header__theme-menu-button {
-    border: none;
     color: var(--accent-color);
   }
 
@@ -52,26 +55,8 @@
     border-right: none;
   }
 
-  @media (width >= 768px) {
-    .header .title-decor {
-      inline-size: 50%;
-    }
-  }
-
   .title-decor {
-    display: block;
-    block-size: fit-content;
-    inline-size: 100%;
-    background-color: var(--accent-color);
     color: var(--background-color);
-    font-size: 1.125rem;
-    font-weight: 700;
-    line-height: 129%;
-    text-wrap-style: pretty;
-  }
-
-  .title-decor__no-bold {
-    font-weight: 400;
   }
 
   .section__title {
