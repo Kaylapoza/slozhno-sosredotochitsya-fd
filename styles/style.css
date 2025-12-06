@@ -106,7 +106,7 @@
   grid-column: 1;
   grid-column-end: auto;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  color: #DB00FF;
+  color: var(--title-color);
   font-weight: 700;
   line-height: 83%;
   text-shadow: 4px 4px 0 var(--accent-color);

@@ -9,6 +9,7 @@
     --text-color: #353430;
     --background-color: rgba(255, 241, 247, 1);
     --accent-color: #FF8DCB;
+    --title-color: #FFC2E6;
 
     .header__decor-element {
       visibility: hidden;
@@ -39,6 +40,10 @@
       border: none;
     }
 
+    .title {
+      color: var(--title-color);
+    }
+
     .title-decor {
       color: var(--text-color);
     }
@@ -66,6 +71,7 @@
   --text-color: #353430;
   --background-color: rgba(255, 241, 247, 1);
   --accent-color: #FF8DCB;
+  --title-color: #FFC2E6;
 
   .header__decor-element {
     visibility: hidden;
@@ -94,6 +100,10 @@
 
   .header__theme-menu-button_type_dark {
     border: none;
+  }
+
+  .title {
+    color: var(--title-color);
   }
 
   .title-decor {
